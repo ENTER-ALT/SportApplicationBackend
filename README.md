@@ -1,0 +1,2 @@
+# SportApplicationBackend
+This was an exam. "User part" was provided, the rest was Written during the exam
