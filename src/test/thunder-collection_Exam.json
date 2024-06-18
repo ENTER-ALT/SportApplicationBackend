@@ -1,0 +1,180 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Exam",
+    "collectionId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+    "dateExported": "2024-06-17T13:45:47.043Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ddb55c9e-9ad5-4e47-92a1-be2b63003d18",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "AddEvent",
+            "url": "localhost:8080/events",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-17T12:07:24.032Z",
+            "modified": "2024-06-17T12:08:56.884Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"name\": \"StudentsSports\",\r\n\"startDate\":\"2024-03-09\",\"endDate\":\"2025-03-10\"}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "f7ef278f-b017-4f4e-b6ff-c1216ee047c9",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "GetAllEvents",
+            "url": "localhost:8080/events",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-17T12:07:33.032Z",
+            "modified": "2024-06-17T12:08:34.697Z",
+            "headers": []
+        },
+        {
+            "_id": "9b6dd396-3328-43d0-a29b-1339e1f139f7",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "AddEvent(Wrong name)",
+            "url": "localhost:8080/events",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-17T12:07:46.700Z",
+            "modified": "2024-06-17T12:09:35.980Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"name\": \"\",\r\n\"startDate\":\"2024-03-09\",\"endDate\":\"2025-03-10\"}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "37a29494-e5b8-4acf-bd98-4d8f55a2ba07",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "AddEvent(EndDate before StartDate)",
+            "url": "localhost:8080/events",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-06-17T12:08:05.197Z",
+            "modified": "2024-06-17T12:09:55.940Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"name\": \"StudentsSports\",\r\n\"startDate\":\"2024-03-09\",\"endDate\":\"2023-03-10\"}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "2ef1af10-dd29-4f2d-b497-db72c4471237",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "AddEvent(Null enddate)",
+            "url": "localhost:8080/events",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-06-17T12:08:20.114Z",
+            "modified": "2024-06-17T12:10:50.763Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\"name\": \"StudentsSports\",\r\n\"startDate\":\"2024-03-09\",\"endDate\":\"\"}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "6a971318-1f7e-4400-b955-d7c96f495395",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "AddSportToEvent",
+            "url": "localhost:8080/events/sport/Sportsday-UCLL",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-06-17T13:02:25.289Z",
+            "modified": "2024-06-17T13:04:08.199Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"testName\",\n  \"teamSport\" : true,\n  \"numOfPlayers\" : 23\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a9cc2c09-e19b-4ed1-b525-482c2f90c11b",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "AddSportToEvent(event does not exists)",
+            "url": "localhost:8080/events/sport/AHAHAHAHAHHAA",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-06-17T13:04:44.251Z",
+            "modified": "2024-06-17T13:04:59.233Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"testName\",\n  \"teamSport\" : true,\n  \"numOfPlayers\" : 23\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cc4e3e03-1886-4d7e-b62f-31750fb2c7d2",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "CalculateKudos",
+            "url": "localhost:8080/events/kudos/2/2",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-06-17T13:40:42.424Z",
+            "modified": "2024-06-17T13:41:05.931Z",
+            "headers": []
+        },
+        {
+            "_id": "244987d1-4b73-4b2a-9188-62b6f25b1b4c",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "CalculateKudos(Sport not present on the event)",
+            "url": "localhost:8080/events/kudos/2/3",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-06-17T13:41:41.634Z",
+            "modified": "2024-06-17T13:41:51.403Z",
+            "headers": []
+        },
+        {
+            "_id": "34a83b00-0173-4da6-97e0-18779c0a8e3b",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "Kudos can only be assigned during the event",
+            "url": "localhost:8080/events/kudos/1/3",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-06-17T13:42:10.394Z",
+            "modified": "2024-06-17T13:42:29.741Z",
+            "headers": []
+        },
+        {
+            "_id": "95604920-bff7-41b5-9ae5-bbe307687b2c",
+            "colId": "0201369a-c2e9-438e-bae6-18fac42e63ff",
+            "containerId": "",
+            "name": "Get events by min number of players in sports",
+            "url": "localhost:8080/events/sport?minNumOfPlayers=2",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-06-17T13:43:21.995Z",
+            "modified": "2024-06-17T13:44:22.845Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "minNumOfPlayers",
+                    "value": "2",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "2_gLndbPImqRT5LBuYwjRa-olsBddidaINu0ydZp2eAflS4j6i6fxyzWPakLTHwSMdzf41frE9lH7okvMyurMA"
+}
